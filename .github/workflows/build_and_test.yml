@@ -25,5 +25,5 @@ jobs:
           if [ -f test_requirements.txt ]; then pip install -r test_requirements.txt --use-deprecated=legacy-resolver; fi
       - name: Test with pytest
         run: |
-          pytest -c kats/tests/pytest_minimal.ini kats/tests/test_minimal.pys
+          pytest -c kats/tests/pytest_minimal.ini kats/tests/test_minimal.py
           pytest
